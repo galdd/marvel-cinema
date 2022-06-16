@@ -1,0 +1,11 @@
+.AppBar {
+  background: transparent;
+  background-color: transparent !important;
+  box-shadow: none !important;
+
+  background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
+
+  &.scrolled {
+    background-color: var(--main-color) !important;
+  }
+}

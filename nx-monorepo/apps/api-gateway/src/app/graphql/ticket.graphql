@@ -1,0 +1,54 @@
+scalar Date
+
+type Ticket {
+  id: ID!
+  showId: String!
+  seatId: Int!
+  isTaken: Boolean!
+}
+type Movie {
+  id: ID!
+  title: String;
+  desc: String;
+  img: String;
+  imgTitle: String;
+  imgSm: String;
+  trailer: String;
+  year: String;
+  moviedbApiId: String;
+}
+
+type Show {
+  id: ID!
+  dateAndTIme: Date!
+  price: Int!
+  moviedbApiId: String!
+  ticketAmount: Int!
+  isSoldOut: Boolean
+}
+
+type Mutation {
+  # setTicket(id: ID!, isTaken: Boolean!): Ticket!
+  createShow(
+    dateAndTIme: Date!
+    price: Int!
+    moviedbApiId: String!
+    ticketAmount: Int!
+  ): Show!
+  editShow(
+    dateAndTIme: Date!
+    price: Int!
+    moviedbApiId: String!
+    ticketAmount: Int!
+  ): Show!
+  removeShow(id: ID!): String!
+}
+
+type Query {
+  Shows: [Show!]!
+  Show(id: ID!): Show
+  Tickets(showId: ID!): [Ticket!]!
+  Ticket(id: ID!): Ticket
+  Movies: [Movie!]!
+  Movies(id: ID!): Movie
+}

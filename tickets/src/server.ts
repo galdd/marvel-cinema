@@ -2,6 +2,7 @@ import db from "./config/sequelize";
 import express from "express";
 import ticketRouter from "./routes/ticket.route";
 import showRouter from "./routes/show.route";
+import movieRouter from './routes/movie.route';
 import morgan from "morgan";
 import "dotenv/config";
 import session from "cookie-session";
@@ -37,7 +38,7 @@ app.use(express.json());
 
 app.use("/ticket", ticketRouter);
 app.use("/show", showRouter);
-
+app.use('/movie', movieRouter);
 //  app.listen(port, () => {
 //     console.log("server is running on port " + port);
 //   });

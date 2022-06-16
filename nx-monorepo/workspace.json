@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "admin": "apps/admin",
+    "admin-e2e": "apps/admin-e2e",
+    "api-gateway": "apps/api-gateway",
+    "api-gateway-util-type": "libs/api-gateway/util-type",
+    "auth": "apps/auth",
+    "client": "apps/client",
+    "client-e2e": "apps/client-e2e",
+    "client-graphql": "libs/client/graphql",
+    "client-ui-shared": "libs/client/ui-shared",
+    "orders": "apps/orders",
+    "tickets": "apps/tickets"
+  }
+}
