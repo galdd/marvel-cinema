@@ -20,8 +20,8 @@ const headerNav = [
     path: '/shows',
   },
   {
-    display: 'Account',
-    path: '/account',
+    display: 'Order',
+    path: '/order',
   },
   // {
   //   display: 'TV Series',

@@ -23,7 +23,7 @@ import { AppDispatch } from '@nx-monorepo/client/redux';
 import './header.scss';
 
 const pages = ['Products', 'Pricing', 'Blog'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const settings = ['Profile', 'Order', 'Dashboard', 'Logout'];
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -91,7 +91,7 @@ export const Header = () => {
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
-              aria-label="account of current user"
+              aria-label="order of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}

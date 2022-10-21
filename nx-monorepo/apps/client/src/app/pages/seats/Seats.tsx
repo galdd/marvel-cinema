@@ -56,7 +56,7 @@ const Seats = () => {
   const [addTodo, { data: Odata, loading: Oloading, error: Oerror }] =
     useMutation(mutation);
   if (Odata) {
-    navigate('/account');
+    navigate('/order');
   }
   console.log('d', Odata);
   console.log('l', Oloading);

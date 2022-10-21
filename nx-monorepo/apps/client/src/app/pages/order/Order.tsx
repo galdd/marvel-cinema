@@ -3,7 +3,7 @@ import { signoutUser, userSelector, clearState } from '../../redux/userSlice';
 import { Featured } from '@nx-monorepo/client/ui-shared';
 import { useEffect, useState } from 'react';
 import { gql, useMutation, useQuery } from '@apollo/client';
-import './account.scss';
+import './order.scss';
 import Moment from 'moment';
 
 import { AppDispatch } from '../../redux/store';
@@ -45,7 +45,7 @@ const query = gql`
   }
 `;
 
-const Account = () => {
+const Order = () => {
   // const { email } = useSelector(userSelector);
   const dispatch: AppDispatch = useDispatch();
   const onLogOut = async () => {
@@ -74,7 +74,7 @@ const Account = () => {
   return (
     <>
       <PageHeader></PageHeader>
-      <div className="account">
+      <div className="order">
         <div className="menu-list">
           <div className="menu-head selected">
             <a>Summary</a>
@@ -144,4 +144,4 @@ const Account = () => {
   );
 };
 
-export default Account;
+export default Order;

@@ -24,7 +24,7 @@ import './app.scss';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Detail from './pages/detail/Detail';
 import Catalog from './pages/Catalog';
-import Account from './pages/account/Account';
+import Order from './pages/order/Order';
 import Footer from './components/footer/Footer';
 import Seats from './pages/seats/Seats';
 import Shows from './pages/shows/Shows';
@@ -81,7 +81,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/watch" element={<Watch />}></Route>
-          <Route path="/account" element={<Account />}></Route>
+          <Route path="/order" element={<Order />}></Route>
           <Route path="/seats/:showid" element={<Seats />}></Route>
           <Route path="/shows" element={<Shows />}></Route>
           <Route path="/shows/:movieid" element={<Shows />}></Route>

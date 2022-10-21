@@ -124,6 +124,15 @@
   }
 }
 
+@media only screen and (max-width: 1300px) {
+  .btns{
+    .btn{
+      padding: 0.5rem 0.8rem;
+    }
+  }
+}
+
+
 .btn-order {
   background-color: #005fff;
   box-shadow: 0px 0px 7px 8px rgb(177 174 253 / 30%);
